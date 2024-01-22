@@ -1,0 +1,31 @@
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+
+	#app {
+		flex: 1;
+		display: flex;
+		background-color: gray;
+		opacity: 0;
+
+		&.fadeIn {
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+			animation: fadeIn 2s forwards;
+		}
+
+		&.faded {
+		}
+
+		.calc-container {
+			background-color: white;
+			border: 0.5vmin solid black;
+		}
+	}
+}
